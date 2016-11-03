@@ -19,11 +19,32 @@ Insert scripts and styles in `index.html`
 <script src="./src/benchmark.js"></script>
 ```
 
-Add benchmark dom to your html
+#### Normal Benchmark
 
 ```
-<div class="benchmarks" gid="google0spread0sheet0id"></div>
+<div class="benchmarks" gid="google_spread_sheet_id"></div>
 ```
 
-Result
-![](http://i.imgur.com/j7IcBEl.png)
+Example
+
+```html
+<div class="benchmarks" gid="1Fg81wPNnC6aFC3mFIzMJqyV3Ig9m5VT1rgKpMhWV9j0"></div>
+<div class="clearfix"></div>
+```
+
+![](http://i.imgur.com/5B8yPxi.png)
+
+#### Benchmark with Custom Scores
+
+```
+<div class="benchmarks" gid="google_spread_sheet_id" scores="score_1,score_2"></div>
+```
+
+Example
+
+```
+<div class="benchmarks" gid="1nQYWwoBpOFOE82Pv_Z47Utrk6Gfei6rAuzVc-vpcyoo" scores="MAP,MRR"></div>
+<div class="clearfix"></div>
+```
+
+![](http://i.imgur.com/e17iPsc.png)
